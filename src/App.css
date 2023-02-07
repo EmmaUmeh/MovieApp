@@ -81,13 +81,31 @@ margin-top: -5px;
   padding-top: 60px;
 }
 .Herocategories{
-  background-color: #E0E0E0;
+  background: rgba(217, 217, 217, 0.2);
   box-shadow: 16px 8px 16px 8px rgb(0,0,0,0.1);
+  width: 36%;
+  /* padding: 5px 10px 5px 0px; */
+}
+.Herocategories li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .categorytxt{
   background-color: #FF1122;
+  /* padding: 5px 10px 5px 0px; */
   color: white;
 }
+.Heroflex{
+  display: flex;
+  /* justify-content: space-between; */
+  grid-gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width:578px){

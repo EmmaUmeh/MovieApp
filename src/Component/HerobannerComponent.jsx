@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import {TfiAngleRight} from "react-icons/tfi";
+import {BiMenuAltLeft} from "react-icons/bi"
 
 
 const HerobannerComponent = (props) => {
@@ -13,9 +14,9 @@ const HerobannerComponent = (props) => {
            
       <Container>
 
-             <div>
+             <div className="Heroflex">
                 <div className="Herocategories">
-                    <div className="categorytxt">{HeroHolder.BrowseCategories}</div>
+                    <div className="categorytxt"><BiMenuAltLeft size="30"/>{HeroHolder.BrowseCategories}</div>
                     
                     <div className="">
                         <ul>
@@ -26,6 +27,22 @@ const HerobannerComponent = (props) => {
                             <li>{HeroHolder.ElectricAppliances} <span><TfiAngleRight/></span></li>
                             <li>{HeroHolder.VideoGaming} <span><TfiAngleRight/></span></li>
                         </ul>
+                    </div>
+
+                </div>
+
+
+                <div className="Summersale">
+                    <img src={HeroHolder.CenterImg} alt="Summer sale"/>
+                </div>
+
+                <div className="ImageSet">
+                    <div className="firstImg">
+                        <img src={HeroHolder.FirstImg} alt="firstImg"/>
+                    </div>
+
+                    <div className="secondImg">
+                        <img src={HeroHolder.SecondImg} alt="secondImg"/>
                     </div>
                 </div>
             </div>
@@ -53,6 +70,9 @@ export const HeroList =[
         TelevisionGadgets:"Television & Gadgets",
         ElectricAppliances:"Electric & Appliances",
         VideoGaming:"VideoGaming",
-    }
+        CenterImg:"./assets/summer sale.png",
+        FirstImg:"./assets/Level1.png",
+        SecondImg:"./assets/Level2.png"
+    },
 ]
 export default HerobannerComponent;

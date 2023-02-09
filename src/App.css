@@ -18,101 +18,130 @@ button{
 input{
   outline: none;
 }
-
-.Navbarcontainer{
-  width:100%;
-  background-color: #ffffff;
-  box-shadow: 16px 8px 16px 8px rgb(0,0,0,0.1);
+.Navconatainer{
+  background-color: #292929;
+  padding: 12px 5px 12px 5px;
+  width: 100%;
 }
-.Navchild{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 5px 10px 5px;
+.Logochild{
+  width: 10%;
 }
-.Navlogo{
-  width: 15%;
+.HeroImage{
+  background-image: url(../public/Rectangle\ 5.png);
+  width: 100%;
+  /* height: 50vh; */
+  padding-bottom: 250px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.useroptions{
-  display: flex;
-  grid-gap: 30px;
-  padding-top: 15px;
-}
-.Navinput input{
-  padding: 8px 300px 8px 8px;
-  border-radius: 5px;
-  border: 1px solid #DDDDDD;
-}
-.Navsearch{
-  background-color: #38B6FF;
-padding: 8px 15px 8px 15px;
-border-radius: 5px;
-position: relative;
-right: 48px;
-color: #FFFFFF;
-}
-.UserAccount{
-  display: flex;
-  cursor: pointer;
-}
-.NavAccountText{
-  margin-top: -10px;
-}
-.NavAccount{
-font-weight: 600;
-margin-top: -5px;
-}
-.badgecounter{
-  position: relative;
-  right: 10px;
-  top:-5px;
-}
-.navcart{
- position: relative;
- right: 7px;
-}
-.Navmenu{
-  display: none;
-  cursor: pointer;
-}
-
-/* Herobanner */
-.Herocontainer{
+.Watchpng{
   padding-top: 60px;
 }
-.Herocategories{
-  background: rgba(217, 217, 217, 0.2);
-  box-shadow: 16px 8px 16px 8px rgb(0,0,0,0.1);
-  width: 36%;
-  /* padding: 5px 10px 5px 0px; */
-}
-.Herocategories li{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-.categorytxt{
-  background-color: #FF1122;
-  /* padding: 5px 10px 5px 0px; */
-  color: white;
-}
-.Heroflex{
-  display: flex;
-  /* justify-content: space-between; */
-  grid-gap: 25px;
-  justify-content: center;
-  align-items: center;
-}
-.firstImg{
-  /* width: 100%;  */
-  margin-bottom: 5px;
+.Watchpng  h3{
+width: 10%;
+font-family: 'DM Sans';
+font-weight: 700;
+font-size: 72px;
+line-height: 94px;
+letter-spacing: -0.05em;
+color: #FFFFFF;
 }
 
+/* SearchComponet */
+.SearchContainer{
+  padding: 20px 5px 20px 5px;
+}
+.SearchContainer span{
+  font-weight: 500;
+}
+.inputbox input{
+  padding: 3px 1000px 3px 3px;
+  border: 1px solid #292929;
+}
 
 /* Media Queries */
-@media screen and (max-width:578px){
-  .Navmenu{
-  display: block;
+@media screen and (max-width:320px) {
+  .HeroImage{
+    padding-bottom: 50px;
+  }
+.Logochild{
+  width: 30%;
+}
+  .Logoimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .Watchpng{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+  .Watchpng h3{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 80%;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.05em;
+  }
+
+  /* Search */
+  .inputbox input{
+    padding: 3px 10px 3px 3px;
+  }
+}
+
+/* Ipad pro 834px */
+@media (min-width:321px) and (max-width:834px) {
+  .HeroImage{
+    padding-bottom: 50px;
+  }
+.Logochild{
+  width: 30%;
+}
+  .Logoimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Watchpng{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Watchpng h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+   width: 80%;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: -0.05em;
+  }
+  .inputbox input{
+    padding: 3px 80px 3px 3px;
+  }
+  .Searchchild span{
+    position: relative;
+    right: 104px;
+  }
+  .Searchchild{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+
+}
+
+@media (min-width:835px) and (max-width:1200px){
+  .inputbox input{
+    padding: 3px 700px 3px 3px;
   }
 }

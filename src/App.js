@@ -1,14 +1,14 @@
 
 import './App.css';
-import NavbarComponent from './Component/NavbarComponent';
 import HerobannerComponent from './Component/HerobannerComponent';
-
-
+import NavbarComponent from './Component/NavbarComponent';
+import SearchComponent from './Component/SearchComponent';
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <NavbarComponent />
       <HerobannerComponent />
+      <SearchComponent />
     </div>
   );
 }
